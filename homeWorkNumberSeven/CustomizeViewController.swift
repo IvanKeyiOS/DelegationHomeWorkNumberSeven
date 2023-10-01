@@ -31,7 +31,6 @@ class CustomizeViewController: UIViewController {
         avatarImageView.layer.borderWidth = 1.5
         avatarImageView.layer.borderColor = UIColor.purple.cgColor
         avatarImageView.clipsToBounds = true
-        
     }
 
     @IBAction private func saveButtonAction() {

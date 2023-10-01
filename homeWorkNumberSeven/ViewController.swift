@@ -23,8 +23,8 @@ class ViewController: UIViewController {
         avatarImageView?.layer.borderWidth = 1.5
         avatarImageView?.layer.borderColor = UIColor.purple.cgColor
         avatarImageView?.clipsToBounds = true
-        
     }
+    
     @IBAction func customizeButtonAction(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "CustomizeViewController", bundle: nil).instantiateViewController(withIdentifier: "CustomizeViewController") as! CustomizeViewController
         let myNavigationController = UINavigationController(rootViewController: storyboard)
