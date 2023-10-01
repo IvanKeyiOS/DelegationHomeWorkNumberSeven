@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Avatar View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AvatarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="AvatarViewController" customModule="homeWorkNumberSeven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose avatar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogv-Xh-8vP">
+                                <rect key="frame" x="16" y="89" width="361" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bPT-Gf-X92">
+                                <rect key="frame" x="0.0" y="139.33333333333337" width="393" height="338"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dk4-Wr-KNV">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="174.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7f-hn-J0A">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="174.33333333333334"/>
+                                                <color key="tintColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="ant" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="100"/>
+                                                    <color key="baseForegroundColor" red="0.60321744079999995" green="0.31274103510000001" blue="0.80330650250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="avatarButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="b6M-zx-bjw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLs-zJ-Pgc">
+                                                <rect key="frame" x="204.66666666666663" y="0.0" width="188.33333333333337" height="174.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <color key="tintColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="100" scale="large"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="avatarButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qeb-HU-mOx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="TLs-zJ-Pgc" secondAttribute="bottom" id="5sj-WU-5HY"/>
+                                            <constraint firstAttribute="trailing" secondItem="TLs-zJ-Pgc" secondAttribute="trailing" id="6wq-DB-VGf"/>
+                                            <constraint firstAttribute="bottom" secondItem="j7f-hn-J0A" secondAttribute="bottom" id="8J5-44-hSr"/>
+                                            <constraint firstItem="j7f-hn-J0A" firstAttribute="leading" secondItem="dk4-Wr-KNV" secondAttribute="leading" id="HdC-xG-AIl"/>
+                                            <constraint firstItem="TLs-zJ-Pgc" firstAttribute="leading" secondItem="j7f-hn-J0A" secondAttribute="trailing" constant="8" symbolic="YES" id="Kkj-a4-sYy"/>
+                                            <constraint firstItem="j7f-hn-J0A" firstAttribute="top" secondItem="dk4-Wr-KNV" secondAttribute="top" id="cBq-uz-1mt"/>
+                                            <constraint firstItem="TLs-zJ-Pgc" firstAttribute="top" secondItem="dk4-Wr-KNV" secondAttribute="top" id="u9c-sT-b2b"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="A8J-t3-ZEA">
+                                        <rect key="frame" x="0.0" y="182.33333333333337" width="393" height="155.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajR-PU-WDD">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="155.66666666666666"/>
+                                                <color key="tintColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="crown" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="100"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="avatarButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yh0-5J-DgI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yf-dA-p0P">
+                                                <rect key="frame" x="204.66666666666663" y="0.0" width="188.33333333333337" height="155.66666666666666"/>
+                                                <color key="tintColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="100"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="avatarButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="TsN-bA-4Fp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="6yf-dA-p0P" secondAttribute="bottom" id="1DF-s6-BXC"/>
+                                            <constraint firstAttribute="bottom" secondItem="ajR-PU-WDD" secondAttribute="bottom" id="2Fw-Wp-NaM"/>
+                                            <constraint firstAttribute="trailing" secondItem="6yf-dA-p0P" secondAttribute="trailing" id="IEX-EQ-Uvr"/>
+                                            <constraint firstItem="ajR-PU-WDD" firstAttribute="top" secondItem="A8J-t3-ZEA" secondAttribute="top" id="MrL-Ah-GaG"/>
+                                            <constraint firstItem="6yf-dA-p0P" firstAttribute="top" secondItem="A8J-t3-ZEA" secondAttribute="top" id="PBr-d6-f7D"/>
+                                            <constraint firstItem="ajR-PU-WDD" firstAttribute="leading" secondItem="A8J-t3-ZEA" secondAttribute="leading" id="hkd-Z9-MPA"/>
+                                            <constraint firstItem="6yf-dA-p0P" firstAttribute="leading" secondItem="ajR-PU-WDD" secondAttribute="trailing" constant="8" symbolic="YES" id="nNt-QK-h46"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="A8J-t3-ZEA" firstAttribute="leading" secondItem="bPT-Gf-X92" secondAttribute="leading" id="PkZ-55-ydK"/>
+                                    <constraint firstItem="dk4-Wr-KNV" firstAttribute="leading" secondItem="bPT-Gf-X92" secondAttribute="leading" id="RdP-ov-R89"/>
+                                    <constraint firstItem="ajR-PU-WDD" firstAttribute="centerX" secondItem="j7f-hn-J0A" secondAttribute="centerX" id="WKW-UY-IJc"/>
+                                    <constraint firstAttribute="trailing" secondItem="A8J-t3-ZEA" secondAttribute="trailing" id="Xt7-B4-Euk"/>
+                                    <constraint firstItem="dk4-Wr-KNV" firstAttribute="top" secondItem="bPT-Gf-X92" secondAttribute="top" id="Zd0-b7-ofw"/>
+                                    <constraint firstAttribute="bottom" secondItem="A8J-t3-ZEA" secondAttribute="bottom" id="eST-Yf-Ezk"/>
+                                    <constraint firstItem="6yf-dA-p0P" firstAttribute="top" secondItem="TLs-zJ-Pgc" secondAttribute="bottom" constant="8.0000000000000284" id="phr-mP-emg"/>
+                                    <constraint firstItem="ajR-PU-WDD" firstAttribute="top" secondItem="j7f-hn-J0A" secondAttribute="bottom" constant="8.0000000000000284" id="pxs-eg-pDt"/>
+                                    <constraint firstAttribute="trailing" secondItem="dk4-Wr-KNV" secondAttribute="trailing" id="yv8-t1-pBU"/>
+                                    <constraint firstItem="TLs-zJ-Pgc" firstAttribute="centerX" secondItem="6yf-dA-p0P" secondAttribute="centerX" id="zCp-qS-1XP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ogv-Xh-8vP" secondAttribute="trailing" constant="16" id="EFX-kg-4Vc"/>
+                            <constraint firstAttribute="trailing" secondItem="bPT-Gf-X92" secondAttribute="trailing" id="Hid-fr-eeZ"/>
+                            <constraint firstItem="bPT-Gf-X92" firstAttribute="top" secondItem="ogv-Xh-8vP" secondAttribute="bottom" constant="30" id="O7T-9E-9mF"/>
+                            <constraint firstItem="ogv-Xh-8vP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="SfZ-PI-CQz"/>
+                            <constraint firstItem="ogv-Xh-8vP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="Wkr-fI-kNv"/>
+                            <constraint firstItem="bPT-Gf-X92" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="lf1-tr-g7m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="antButton" destination="j7f-hn-J0A" id="4Yy-wW-iFb"/>
+                        <outlet property="crownButton" destination="ajR-PU-WDD" id="FC5-gy-Eor"/>
+                        <outlet property="personButton" destination="TLs-zJ-Pgc" id="LVM-rg-3kI"/>
+                        <outlet property="starButton" destination="6yf-dA-p0P" id="PCm-It-lt2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ant" catalog="system" width="106" height="128"/>
+        <image name="crown" catalog="system" width="128" height="92"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

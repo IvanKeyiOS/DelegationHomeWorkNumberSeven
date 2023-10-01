@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Male View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MaleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MaleViewController" customModule="homeWorkNumberSeven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GnU-jd-vDe">
+                                <rect key="frame" x="20" y="139.33333333333331" width="353" height="182.33333333333331"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qh-Ih-eR9">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Frog" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nameMaleButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yUC-dD-PwX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1K6-Iv-bHj">
+                                        <rect key="frame" x="0.0" y="49.333333333333314" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Hammer" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nameMaleButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bHD-zU-WgU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEr-CX-vsi">
+                                        <rect key="frame" x="0.0" y="98.666666666666657" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="King" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nameMaleButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Pyi-Ep-b8R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPO-Z1-4yg">
+                                        <rect key="frame" x="0.0" y="147.99999999999997" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Gun" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nameMaleButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wkH-AJ-rPI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa1-AG-RGF">
+                                <rect key="frame" x="16" y="89" width="361" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wa1-AG-RGF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="4RA-v4-iXf"/>
+                            <constraint firstItem="GnU-jd-vDe" firstAttribute="top" secondItem="Wa1-AG-RGF" secondAttribute="bottom" constant="30" id="6dN-jm-n7J"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Wa1-AG-RGF" secondAttribute="trailing" constant="16" id="Bev-oS-nbh"/>
+                            <constraint firstItem="Wa1-AG-RGF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="HPn-eN-0gy"/>
+                            <constraint firstItem="GnU-jd-vDe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="eGe-hj-7zH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GnU-jd-vDe" secondAttribute="trailing" constant="20" id="tx7-CB-upW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="frogButton" destination="4Qh-Ih-eR9" id="NUm-uY-tQx"/>
+                        <outlet property="gunButton" destination="BPO-Z1-4yg" id="Lzf-JK-qQB"/>
+                        <outlet property="hammerButton" destination="1K6-Iv-bHj" id="c6o-SN-b7Y"/>
+                        <outlet property="kingButton" destination="eEr-CX-vsi" id="GZX-7e-2xP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

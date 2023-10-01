@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Female View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FemaleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="FemaleViewController" customModule="homeWorkNumberSeven" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8W7-oy-Hpq">
+                                <rect key="frame" x="16" y="89" width="361" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YpC-ig-XjT">
+                                <rect key="frame" x="20" y="131.33333333333331" width="353" height="182.33333333333331"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuF-lP-hao">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Fox" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nameFemaleButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cr2-k8-eZo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umw-fm-keS">
+                                        <rect key="frame" x="0.0" y="49.333333333333314" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Mirror" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nameFemaleButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="czu-IU-zqB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoF-ja-W2a">
+                                        <rect key="frame" x="0.0" y="98.666666666666657" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Queen" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nameFemaleButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YDB-3W-Jqs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZA-yf-Wb7">
+                                        <rect key="frame" x="0.0" y="147.99999999999997" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Candy" cornerStyle="large">
+                                            <backgroundConfiguration key="background">
+                                                <color key="strokeColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.51387171190000003" green="0.27133274930000001" blue="0.67990451389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nameFemaleButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="851-ET-mzC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8W7-oy-Hpq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="0UD-Y7-MIs"/>
+                            <constraint firstItem="YpC-ig-XjT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="0Zj-B9-95m"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YpC-ig-XjT" secondAttribute="trailing" constant="20" id="3mg-Ae-Qdp"/>
+                            <constraint firstItem="8W7-oy-Hpq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="Nq0-Wb-dAB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8W7-oy-Hpq" secondAttribute="trailing" constant="16" id="fH5-2d-y9Z"/>
+                            <constraint firstItem="YpC-ig-XjT" firstAttribute="top" secondItem="8W7-oy-Hpq" secondAttribute="bottom" constant="22" id="w4j-Nx-3Jq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="candyButton" destination="vZA-yf-Wb7" id="QBr-kF-eQ8"/>
+                        <outlet property="foxButton" destination="vuF-lP-hao" id="f3C-AK-gJC"/>
+                        <outlet property="mirrorButton" destination="umw-fm-keS" id="1Ag-en-Vh2"/>
+                        <outlet property="queenButton" destination="qoF-ja-W2a" id="DVh-Ow-FhO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
